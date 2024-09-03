@@ -1,10 +1,15 @@
 ## Code to download all the Dynamics CRM solution packer tools
+<br />## In C drive and creat a folder called SolutionPackagerDemo
+<br />## Dowload either managed/unmanaged solution and store it the above folder
+<br />## Log in to windows powershell ISO and cd to root then cd to the above folder
+<br /##> Now copy the code
+
+<br />## To Unpack/Extract use `solutionpackager.exe/action:Extract/zipfile:"C:\SolutionPackagerDemo\WomenLiftTheme_1_0_0_1.zip"\folder:"C:\SolutionPackagerDemo\ExtractedSoln"`
+<br />## To Pack use <br /> `solutionpackager.exe /action:Pack /folder:"C:\SolutionPackagerDemo\ExtractedSoln" /zipfile:ZippedSolnFolder.zip"`
+
+solutionpackager.exe /action:Pack /folder:"C:\SolutionPackagerDemo\ExtractedSoln" /zipfile:ZippedSolnFolder.zip"
 ##
-##Go to C drive and creat a folder called SolutionPackagerDemo
-##Dowload either managed/unmanaged solution and store it the above folder
-##Log in to windows powershell ISO and cd to root then cd to the above folder
-##Now copy the code
-##
+
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $sourceNugetExe = "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe"
