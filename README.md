@@ -1,4 +1,4 @@
-## Code to download all the Dynamics CRM solution packer tools
+## Code to download all the Dynamics CRM solution packager tools
 <br />## In C drive and creat a folder called SolutionPackagerDemo
 <br />## Dowload either managed/unmanaged solution and store it the above folder
 <br />## Log in to windows powershell ISO and cd to root then cd to the above folder
